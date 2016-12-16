@@ -1,0 +1,11 @@
+each friend in friends
+    li
+        .circle--fluid
+            .circle--fluid--cell.circle--fluid--primary
+                a.app--tweet--author
+                    .app--avatar(style='background-image: url(#{friend.image_url})')
+                        img(src='#{friend.image_url}')
+                    h4 #{friend.name}
+                    p @#{friend.screen_name}
+            .circle--fluid--cell
+                a.button.button-text Unfollow

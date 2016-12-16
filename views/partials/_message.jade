@@ -1,0 +1,6 @@
+each messagey in messages
+    li(class="#{messagey.owner}")
+        .app--avatar(style='background-image: url(#{messagey.image_url})')
+            img(src='#{messagey.image_url}')
+        p.app--message--text #{messagey.text}
+        p.app--message--timestamp #{messagey.created_at_humanized}
